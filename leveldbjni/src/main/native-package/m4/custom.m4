@@ -53,7 +53,7 @@ AC_DEFUN([CUSTOM_M4_SETUP],
   [AS_HELP_STRING([--with-snappy@<:@=PATH@:>@],
     [Directory where snappy was built. Example: --with-snappy=/opt/snappy])],
   [
-    LDFLAGS="$LDFLAGS -lsnappy -L${withval}"
+    LDFLAGS="$LDFLAGS -lsnappy"
     AC_SUBST(LDFLAGS)
   ])
 
